@@ -1,0 +1,33 @@
+{
+    "HomePage": {
+      "headline": "Hope, Healing, and Innovation",
+      "subHeadline": "Comprehensive care for hematology and oncology patients, guided by expertise and empathy.",
+      "firstName": "Dr.Babak",
+      "sureName": "Nejati",
+      "exp1": "Hematologist, Oncologist, BMT Expert",
+      "bookBtn": "Book Appiontment",
+      "successBmt" : "Sucssefull Transplantations"
+    },
+    "NavBar": {
+      "home": "Home",
+      "aboutMe": "About me",
+      "contact": "Contact",
+      "navFont": "text-base"
+    },
+    "AboutPage": {
+      "title" : "Educational and Professional Background:",
+      "inf1" : "General practitioner from Tabriz University of Medical Sciences in 1995.",
+      "inf2" : "Specialization in internal medicine from 2004 to 2008.",
+      "inf3" : "Subspecialty in Hematology and Oncology from Tabriz University of Medical Sciences from 2010 to 2011.",
+      "inf4" : "Advanced fellowship in bone marrow transplantation at Shariati Hospital, Tehran University in 2012.",
+      "inf5" : "Faculty member at Tabriz University of Medical Sciences since 2012.",
+      "inf6" : "Associate Professor at Tabriz University of Medical Sciences since 2019."
+    },
+    "ContactPage": {
+      "address" : "Tabriz - Golgasht Street, before reaching Imam Reza Hospital, across from Mandana Avenue, Mad Building (blue facade building), 5th floor.",
+      "getDir": "Get Direction",
+      "0930-287-1635": "0930-287-1635",
+      "instagram": "Instagram",
+      "whatsapp": "Whatsapp"
+    }
+  }

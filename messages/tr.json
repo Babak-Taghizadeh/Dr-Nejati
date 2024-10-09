@@ -1,0 +1,33 @@
+{
+  "HomePage": {
+    "headline": "Umut, Tedavi ve Yenilik",
+    "subHeadline": "Uzmanlık ve empatiyle yönlendirilen, hematoloji ve onkoloji hastaları için kapsamlı bakım.",
+    "firstName": "Dr.Babak",
+    "sureName": "Nejati",
+    "exp1": "Hematolog, Onkolog, Kemik İliği Nakli Uzmanı",
+    "bookBtn": "Randevu Al",
+    "successBmt": "Başarılı Nakiller"
+  },
+  "NavBar": {
+    "home": "Anasayfa",
+    "aboutMe": "Hakkımda",
+    "contact": "İletişim",
+    "navFont": "text-base"
+  },
+  "AboutPage": {
+    "title": "Eğitim ve profesyonel geçmiş:",
+    "inf1": "1995, Tabriz Üniversitesi Tıp Fakültesi, pratisyen doktor.",
+    "inf2": "2004-2008, iç hastalıkları ihtisası.",
+    "inf3": "2010-2011, Tabriz Üniversitesi Tıp Fakültesi, Hematoloji ve Onkoloji yan dalı.",
+    "inf4": "2012, Şariati Hastanesi, Tahran Üniversitesi, kemik iliği transplantasyonu ileri düzey eğitimi.",
+    "inf5": "2012'den itibaren, Tabriz Üniversitesi Tıp Fakültesi, öğretim üyeliği.",
+    "inf6": "2019'dan itibaren, Tabriz Üniversitesi Tıp Fakültesi, doçent."
+  },
+  "ContactPage": {
+    "address": "Tebriz - Golgaşt Caddesi, İmam Rıza Hastanesi’ne varmadan, Mandana Caddesi karşısı, Mad Binası (mavi cepheli bina), 5. kat.",
+    "getDir": "Yol Tarifi Al",
+    "0930-287-1635": "0930-287-1635",
+    "instagram": "Instagram",
+    "whatsapp": "Whatsapp"
+  }
+}
