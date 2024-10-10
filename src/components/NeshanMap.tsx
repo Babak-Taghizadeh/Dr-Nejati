@@ -2,7 +2,7 @@
 
 import mapboxgl from "@neshan-maps-platform/mapbox-gl";
 import "@neshan-maps-platform/mapbox-gl/dist/NeshanMapboxGl.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 import { CornerUpRight } from "lucide-react";
@@ -10,10 +10,12 @@ import { CornerUpRight } from "lucide-react";
 const NeshanMap = () => {
   const t = useTranslations("ContactPage");
 
+  const [apiKeyLoaded, setApiKeyLoaded] = useState(false);
   const apiKeyRef = useRef<string | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement>(null);
 
+  // Fetch API Key
   useEffect(() => {
     const fetchApiKey = async () => {
       try {
@@ -21,7 +23,7 @@ const NeshanMap = () => {
         const data = await response.json();
         if (data.apiKey) {
           apiKeyRef.current = data.apiKey;
-          // console.log(apiKeyRef.current);
+          setApiKeyLoaded(true);
         } else {
           console.error("Failed to fetch API key");
         }
@@ -33,8 +35,9 @@ const NeshanMap = () => {
     fetchApiKey();
   }, []);
 
+  // Initialize Map after API key is loaded
   useEffect(() => {
-    if (apiKeyRef.current && mapContainerRef.current) {
+    if (apiKeyLoaded && mapContainerRef.current) {
       mapRef.current = new mapboxgl.Map({
         mapType: mapboxgl.Map.mapTypes.neshanVector,
         container: mapContainerRef.current,
@@ -44,7 +47,7 @@ const NeshanMap = () => {
         minZoom: 2,
         maxZoom: 21,
         trackResize: true,
-        mapKey: apiKeyRef.current,
+        mapKey: apiKeyRef.current!,
         poi: false,
         traffic: false,
       }) as unknown as mapboxgl.Map;
@@ -53,8 +56,9 @@ const NeshanMap = () => {
         drawMarkerOnMap();
       });
     }
-  }, []);
+  }, [apiKeyLoaded]);
 
+  // Function to draw marker on map
   function drawMarkerOnMap() {
     const map = mapRef.current;
 
@@ -65,6 +69,7 @@ const NeshanMap = () => {
     }
   }
 
+  // Handle directions button click
   const getDirections = () => {
     const url =
       "https://neshan.org/maps/@38.057314,46.322567,19.6z,0p/places/_bA9EB2C48y-";

@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <MotionContainer
       className={
-        `fixed left-0 top-0 m-auto flex h-fit w-full items-center justify-between border-b-2 border-black/40 p-3 lg:py-6 lg:px-44 transition-all ${scrollY ? "-top-20" : "top-0"}`
+        `fixed left-0 top-0 m-auto flex h-fit w-full items-center justify-between border-b-2 border-black/40 p-3 lg:py-6 lg:px-44 transition-all ${scrollY ? "hidden" : "flex"}`
       }
       y={-100}
       delay={0.6}

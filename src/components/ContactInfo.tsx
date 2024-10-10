@@ -23,9 +23,9 @@ const ContactInfo = () => {
                     item.text == "instagram" &&
                       "bg-gradient-to-r from-[#833AB4] via-[#C13584] to-[#F56040]",
                     item.text == "whatsapp" &&
-                      "bg-gradient-to-r from-[#25D366] via-[#075E54] to-[#25D366]",
+                      "bg-gradient-to-b from-[#25D366] via-[#075E54] to-[#25D366]",
                     item.text == "0930-287-1635" &&
-                      "bg-gradient-to-r from-[#16222A] to-[#3A6073]",
+                      "bg-gradient-to-r from-indigo-500 to-violet-500",
                     "flex gap-2 text-base",
                   )}
                 >
