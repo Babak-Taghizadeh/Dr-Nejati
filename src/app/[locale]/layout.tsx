@@ -4,31 +4,38 @@ import "../globals.css";
 import Navbar from "@/components/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { unstable_setRequestLocale } from "next-intl/server";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 const scheherazade = Scheherazade_New({
   weight: "700",
   subsets: ["latin"],
-  display: 'swap'
+  display: "swap",
 });
 
 const roboto = Roboto({
   weight: "500",
   subsets: ["latin"],
-  display: 'swap'
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'Dr.Nejati',
-  description: 'Dr.Nejati official website',
+  title: "Dr.Nejati",
+  description: "Dr.Nejati official website",
 };
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params: { locale = "fa" },
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(locale);
   const messages = await getMessages();
 
   const isRTL = locale === "fa";

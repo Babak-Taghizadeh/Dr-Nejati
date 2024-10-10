@@ -3,10 +3,14 @@ import HeroImage from "@/components/HeroImage";
 import BookAppBtn from "@/components/BookAppBtn";
 import MotionContainer from "@/components/MotionContainer";
 import Headline from "@/components/Headline";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function Home() {
+export default function Home({
+  params: { locale },
+}: Readonly<{ params: { locale: string } }>) {
+  unstable_setRequestLocale(locale);
   return (
-    <div className="flex min-h-dvh flex-col items-center gap-7 pt-24 px-5 lg:justify-evenly lg:gap-14 lg:pt-32">
+    <div className="flex min-h-dvh flex-col items-center gap-7 px-5 pt-24 lg:justify-evenly lg:gap-14 lg:pt-32">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-evenly lg:px-32 xl:px-48">
         <MotionContainer
           className="flex flex-col gap-4 px-3 lg:gap-10 lg:self-start"

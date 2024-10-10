@@ -29,13 +29,13 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone <git@github.com:Babak-Taghizadeh/Dr-Nejati.git>
     ```
 
 2. **Navigate to the project directory:**
 
     ```bash
-    cd <project-directory>
+    cd <Dr-Nejati>
     ```
 
 3. **Install the dependencies:**
@@ -73,30 +73,6 @@ The project uses **Neshan Maps Platform** for map functionality. To set it up:
     NEXT_PUBLIC_NESHAN_MAPS_API_KEY=your_api_key
     ```
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to fork the repository and create a pull request or open an issue to suggest new features.
-
-1. **Fork the project.**
-2. **Create your feature branch:**
-
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-
-3. **Commit your changes:**
-
-    ```bash
-    git commit -m 'Add some feature'
-    ```
-
-4. **Push to the branch:**
-
-    ```bash
-    git push origin feature/your-feature
-    ```
-
-5. **Open a pull request.**
 
 ## 📜 License
 
@@ -106,4 +82,4 @@ This project is licensed under the MIT License.
 
 ## 📞 Contact
 
-For inquiries, you can reach out via [your email or contact method].
+For inquiries, you can reach out via [babak.tz98@gmail.com].

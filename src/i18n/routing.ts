@@ -6,7 +6,7 @@ export const routing = defineRouting({
   locales: ["fa", "en", "tr"],
 
   // triggers when no locales have chosen
-  defaultLocale: "fa"
+  defaultLocale: "fa",
 });
 
 //next.js navigation wrappers
