@@ -2,6 +2,9 @@
 
 This is a **multilingual** and **responsive** website built for an oncologist using **Next.js**. It supports three languages—**Persian, English, and Turkish**—and provides essential information about the oncologist, including office location and practice statistics. The project is designed to be **scalable** and will be updated with new features over time.
 
+## Screenshots
+![Photo!](src/app/opengraph-image.png)
+
 ## 🛠 Features
 
 - 🌐 **Multilingual Support**: Persian, English, and Turkish.
@@ -100,10 +103,6 @@ Contributions, issues, and feature requests are welcome! Feel free to fork the r
 This project is licensed under the MIT License.
 
 ---
-
-## Screenshots (Optional)
-
-You can add screenshots of the project to this section to showcase its design and functionality.
 
 ## 📞 Contact
 
