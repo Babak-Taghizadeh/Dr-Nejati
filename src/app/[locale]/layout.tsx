@@ -19,7 +19,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'Dr.Nejati',
-  description: '...',
+  description: 'Dr.Nejati official website',
 };
 
 export default async function RootLayout({
