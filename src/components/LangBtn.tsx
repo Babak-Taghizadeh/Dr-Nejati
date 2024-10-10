@@ -39,7 +39,7 @@ const LangBtn = () => {
                   src={item.icon}
                   alt={item.name}
                   width={20}
-                  priority={true}
+                  priority
                 />
                 <h1 className="font-semibold">
                 {item.name}

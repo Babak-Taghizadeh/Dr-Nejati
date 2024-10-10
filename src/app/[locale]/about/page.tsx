@@ -1,9 +1,9 @@
-import Image from "next/image";
-import StandAvatar from "../../../../public/3.png";
+
 import MotionContainer from "@/components/MotionContainer";
 import Credentials from "@/components/Credentials";
 import AnimatedNumber from "@/components/AnimateNumber";
 import { unstable_setRequestLocale } from "next-intl/server";
+import AboutImage from "@/components/AboutImage";
 
 const AboutPage = ({
   params: { locale },
@@ -17,12 +17,7 @@ const AboutPage = ({
           y={0}
           x={100}
         >
-          <Image
-            className="rounded-xl"
-            src={StandAvatar}
-            alt="StandAvatar"
-            priority={true}
-          />
+          <AboutImage />
         </MotionContainer>
         <MotionContainer
           className="flex w-fit flex-col items-center gap-6 px-12 lg:gap-10 lg:px-0"
