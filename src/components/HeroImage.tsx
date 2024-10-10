@@ -9,7 +9,7 @@ const HeroImage = () => {
         src={avatar}
         alt="babak nejati"
         loading="eager"
-        priority
+        priority={true}
       />
       </>
   );
