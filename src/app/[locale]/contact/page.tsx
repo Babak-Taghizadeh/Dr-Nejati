@@ -19,8 +19,7 @@ const ContactPage = ({
       </MotionContainer>
       <MotionContainer
         className="w-full rounded-md p-5 lg:w-3/5"
-        y={0}
-        x={-100}
+        y={-100}
       >
         <DynamicMap />
       </MotionContainer>

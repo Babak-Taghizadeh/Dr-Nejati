@@ -34,7 +34,8 @@ const MotionContainer = ({
 
   const exitStyle = {
     opacity: 0,
-    y: 0,
+    x: 0,
+    y: 0
   };
 
   return (

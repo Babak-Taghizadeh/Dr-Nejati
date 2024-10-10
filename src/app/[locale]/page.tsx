@@ -14,7 +14,7 @@ export default function Home({
       <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-evenly lg:px-32 xl:px-48">
         <MotionContainer
           className="flex flex-col gap-4 px-3 lg:gap-10 lg:self-start"
-          x={-100}
+          y={-100}
           delay={0.6}
           duration={0.4}
         >
