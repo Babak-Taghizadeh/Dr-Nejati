@@ -28,11 +28,11 @@ const Navbar = () => {
   return (
     <MotionContainer
       className={
-        `fixed left-0 top-0 m-auto flex h-fit w-full items-center justify-between border-b-2 border-black/40 p-3 lg:py-6 lg:px-44 transition-all ${scrollY ? "hidden" : "flex"}`
+        `fixed left-0 top-0 flex h-fit w-full items-center justify-between border-b-2 border-black/40 p-3 lg:py-6 lg:px-44 ${scrollY ? "hidden" : "flex"}`
       }
       y={-100}
       delay={0.6}
-      duration={0.5}
+      duration={0.4}
     >
       <nav className="flex justify-between gap-4 lg:gap-8">
         {navBar.map((item) => {
