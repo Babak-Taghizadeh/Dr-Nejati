@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Scheherazade_New, Roboto } from "next/font/google";
+import { Almarai, Roboto } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import { NextIntlClientProvider } from "next-intl";
@@ -11,14 +11,14 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const scheherazade = Scheherazade_New({
-  weight: "700",
-  subsets: ["latin"],
+const rubik = Almarai({
+  weight: ["700","800"],
+  subsets: ["arabic"],
   display: "swap",
 });
 
 const roboto = Roboto({
-  weight: "500",
+  weight: ["700", "900"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -39,14 +39,14 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   const isRTL = locale === "fa";
-  const bodyClassName = isRTL ? scheherazade.className : roboto.className;
+  const bodyClassName = isRTL ? rubik.className : roboto.className;
 
   return (
     <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
       <body className={bodyClassName}>
         <NextIntlClientProvider messages={messages}>
-          <main className="min-h-dvh bg-[linear-gradient(#4B9CD3,#fff)]">
             <Navbar />
+          <main className="min-h-dvh bg-[linear-gradient(#4B9CD3,#fff)]">
             {children}
           </main>
         </NextIntlClientProvider>

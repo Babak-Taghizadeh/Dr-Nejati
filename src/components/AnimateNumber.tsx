@@ -30,9 +30,9 @@ const AnimatedNumber = () => {
   }, [isInView]);
 
   return (
-    <div className="flex flex-col items-center text-[#0066b2] border-2 border-[#0066b2] p-3 rounded-xl justify-end gap-3 mb-8"
+    <div className="flex flex-col items-center text-[#0066b2] border-2 border-[#0066b2] p-3 rounded-xl gap-3"
     ref={ref}>
-      <h1 className="text-2xl font-bold">{t("successBmt")}</h1>
+      <h1 className="text-xl font-bold lg:text-2xl">{t("successBmt")}</h1>
       <motion.span
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

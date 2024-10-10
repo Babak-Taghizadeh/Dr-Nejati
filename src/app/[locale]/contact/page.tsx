@@ -13,7 +13,7 @@ const ContactPage = ({
 }: Readonly<{ params: { locale: string } }>) => {
   unstable_setRequestLocale(locale);
   return (
-    <div className="flex min-h-dvh w-full flex-col items-center gap-4 px-6 pt-24 lg:pt-32">
+    <div className="flex min-h-dvh w-full flex-col items-center justify-evenly px-6 pt-12">
       <MotionContainer y={0} x={100}>
         <AddressText />
       </MotionContainer>

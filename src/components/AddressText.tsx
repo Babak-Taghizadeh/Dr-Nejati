@@ -6,7 +6,7 @@ const AddressText = () => {
   return (
     <div className="flex w-fit gap-2 lg:items-center">
       <MapPin className="shrink-0" size={20} />
-      <h1 className="animate-pulse text-wrap text-base font-medium">
+      <h1 className="animate-pulse text-wrap font-medium lg:text-xl">
         {t("address")}
       </h1>
     </div>

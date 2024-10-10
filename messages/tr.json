@@ -2,20 +2,18 @@
   "HomePage": {
     "headline": "Umut, Tedavi ve Yenilik",
     "subHeadline": "Uzmanlık ve empatiyle yönlendirilen, hematoloji ve onkoloji hastaları için kapsamlı bakım.",
-    "firstName": "Dr.Babak",
-    "sureName": "Nejati",
+    "name": "Dr.Babak Nejati",
     "exp1": "Hematolog, Onkolog, Kemik İliği Nakli Uzmanı",
     "bookBtn": "Randevu Al",
-    "successBmt": "Başarılı Nakiller"
+    "successBmt": "Tamamlanmış Nakiller"
   },
   "NavBar": {
     "home": "Anasayfa",
     "aboutMe": "Hakkımda",
-    "contact": "İletişim",
-    "navFont": "text-base"
+    "contact": "İletişim"
   },
   "AboutPage": {
-    "title": "Eğitim ve profesyonel geçmiş:",
+    "title": "Eğitim ve profesyonel geçmiş",
     "inf1": "1995, Tabriz Üniversitesi Tıp Fakültesi, pratisyen doktor.",
     "inf2": "2004-2008, iç hastalıkları ihtisası.",
     "inf3": "2010-2011, Tabriz Üniversitesi Tıp Fakültesi, Hematoloji ve Onkoloji yan dalı.",
