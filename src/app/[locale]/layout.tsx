@@ -3,7 +3,7 @@ import { Almarai, Roboto } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -23,10 +23,13 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Dr.Nejati",
-  description: "Dr.Nejati official website",
-};
+export async function generateMetadata({params: {locale}}: {params: {locale : string}}) {
+  const t = await getTranslations({locale, namespace: 'MetaData'});
+ 
+  return {
+    title: t('title')
+  };
+}
 
 export default async function RootLayout({
   children,

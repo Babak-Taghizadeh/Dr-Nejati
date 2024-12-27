@@ -3,6 +3,8 @@
 import avatar from "../../public/2.png";
 import Image from "next/image";
 
+
+
 const HeroImage = () => {
   return (
     <>

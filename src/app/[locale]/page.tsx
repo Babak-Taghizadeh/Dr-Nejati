@@ -14,7 +14,7 @@ export default function Home({
     <div className="mb-8 flex min-h-dvh flex-col items-center gap-6 px-5 pt-20 lg:justify-evenly lg:gap-12 lg:pt-32">
       <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-evenly lg:px-32 xl:px-48">
         <MotionContainer
-          className="flex flex-col items-start px-3 self-start"
+          className="flex flex-col items-start px-3 self-start md:gap-4"
           y={-100}
           delay={0.6}
           duration={0.4}

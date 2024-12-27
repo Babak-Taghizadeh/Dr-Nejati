@@ -3,7 +3,7 @@
     "headline": "Umut, Tedavi ve Yenilik",
     "subHeadline": "Uzmanlık ve empatiyle yönlendirilen, hematoloji ve onkoloji hastaları için kapsamlı bakım.",
     "name": "Dr.Babak Nejati",
-    "exp1": "Hematolog, Onkolog, Kemik İliği Nakli Uzmanı",
+    "exp": "Hematolog, Onkolog, Kemik İliği Nakli Uzmanı",
     "bookBtn": "Randevu Al",
     "successBmt": "Tamamlanmış Nakiller"
   },
@@ -27,5 +27,9 @@
     "0930-287-1635": "0930-287-1635",
     "instagram": "Instagram",
     "whatsapp": "Whatsapp"
+  },
+  "MetaData": {
+    "title": "Hematolog, Onkolog, Kemik İliği Nakli Uzmanı",
+    "desc": "Kanser teşhisi, kişiselleştirilmiş tedavi planları ve kemoterapi hizmetleri ile hasta sonuçlarını iyileştirme."
   }
 }

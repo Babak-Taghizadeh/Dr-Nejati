@@ -3,7 +3,7 @@
       "headline": "Hope, Healing, and Innovation",
       "subHeadline": "Comprehensive care for hematology and oncology patients, guided by expertise and empathy.",
       "name": "Dr.Babak Nejati",
-      "exp1": "Hematologist, Oncologist, BMT Expert",
+      "exp": "Hematologist, Oncologist, BMT Expert",
       "bookBtn": "Book Appiontment",
       "successBmt" : "Completed Transplants"
     },
@@ -27,5 +27,9 @@
       "0930-287-1635": "0930-287-1635",
       "instagram": "Instagram",
       "whatsapp": "Whatsapp"
+    },
+    "MetaData": {
+      "title": "Hematologist, Oncologist, BMT Expert",
+      "desc": "Cancer diagnosis, personalized treatment plans, and chemotherapy services to improve patient outcomes."
     }
   }
