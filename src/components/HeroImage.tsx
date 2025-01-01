@@ -6,6 +6,7 @@ import Image from "next/image";
 
 
 const HeroImage = () => {
+  // image square, top left no readius
   return (
     <>
       <Image

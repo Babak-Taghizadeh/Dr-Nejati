@@ -22,10 +22,10 @@ const LangBtn = () => {
     const newPath = `/${locale}${pathname.substring(3)}`;
     router.push(newPath);
   };
-
+  // arrow down in persian on left of text
   return (
     <Select onValueChange={handleChange} defaultValue={pathname.split('/')[1]}>
-      <SelectTrigger className="w-fit p-0 gap-2 lg:text-base">
+      <SelectTrigger className="w-fit border border-gray-200 p-4 gap-2 lg:text-base">
         <SelectValue placeholder={pathname.split('/')[1]} />
       </SelectTrigger>
       <SelectContent>
@@ -35,12 +35,12 @@ const LangBtn = () => {
             return (
               <SelectItem key={item.name} value={item.link}>
                 <div className="flex gap-2">
-                <Image
+                {/* <Image
                   src={item.icon}
                   alt={item.name}
                   width={20}
                   priority
-                />
+                /> */}
                 <h1 className="font-semibold">
                 {item.name}
                   </h1>

@@ -10,7 +10,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-
+// Yekan
 const rubik = Almarai({
   weight: ["700","800"],
   subsets: ["arabic"],
@@ -49,7 +49,7 @@ export default async function RootLayout({
       <body className={bodyClassName}>
         <NextIntlClientProvider messages={messages}>
             <Navbar />
-          <main className="min-h-dvh bg-[linear-gradient(#4B9CD3,#fff)]">
+          <main className="min-h-dvh bg-[#fcfcfc]">
             {children}
           </main>
         </NextIntlClientProvider>

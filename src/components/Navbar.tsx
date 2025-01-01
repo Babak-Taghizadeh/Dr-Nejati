@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <MotionContainer
-      className={`fixed left-0 right-0 top-0 flex w-dvw justify-between items-center lg:justify-between border-b-2 border-black/40 p-3 lg:px-44 lg:py-6 ${scrollY ? "hidden" : "flex"}`}
+      className={`fixed left-0 right-0 top-0 flex w-dvw justify-between items-center lg:justify-between shadow-md p-3 lg:px-44 lg:py-6 ${scrollY ? "hidden" : "flex"}`}
       y={-100}
       x={0}
       delay={0.8}
@@ -40,7 +40,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.link}
-              className={`font-bold lg:text-xl lg:hover:text-[#2f7df4] ${pathname === item.link && "text-zinc-200"}`}
+              className={`font-bold text-black/60 lg:text-xl lg:hover:text-[#2f7df4] ${pathname === item.link && "text-blue-700"}`}
             >
               {t(item.name)}
             </Link>
