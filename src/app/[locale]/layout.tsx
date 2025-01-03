@@ -49,7 +49,7 @@ export default async function RootLayout({
       <body className={bodyClassName}>
         <NextIntlClientProvider messages={messages}>
             <Navbar />
-          <main className="min-h-dvh bg-[#fcfcfc]">
+          <main className="min-h-dvh bg-[#E3F2FD]">
             {children}
           </main>
         </NextIntlClientProvider>

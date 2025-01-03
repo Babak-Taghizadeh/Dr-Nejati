@@ -20,7 +20,12 @@ export default function Home({
           duration={0.4}
         >
           <HeroContent />
+          <section className="grid grid-cols-2 gap-4 w-fit">
           <AnimatedNumber />
+          <AnimatedNumber />
+          <AnimatedNumber />
+          <AnimatedNumber />
+          </section>
           <BookAppBtn />
         </MotionContainer>
         <MotionContainer
