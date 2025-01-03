@@ -1,13 +1,12 @@
 "use client"
 
-import avatar from "../../public/2.png";
+import avatar from "../../public/Dr-Nejati.png";
 import Image from "next/image";
 
 
 
 const HeroImage = () => {
   return (
-    <>
       <Image
         className="transition-opacity opacity-0 duration-[3s] rounded-xl"
         src={avatar}
@@ -16,7 +15,6 @@ const HeroImage = () => {
         onLoadingComplete={(img) => img.classList.remove("opacity-0")}
         priority
       />
-      </>
   );
 };
 export default HeroImage;

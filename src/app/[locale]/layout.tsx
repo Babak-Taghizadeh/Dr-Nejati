@@ -12,22 +12,26 @@ export function generateStaticParams() {
 }
 
 const rubik = Almarai({
-  weight: ["700","800"],
+  weight: ["300", "400", "700", "800"],
   subsets: ["arabic"],
   display: "swap",
 });
 
 const roboto = Roboto({
-  weight: ["700", "900"],
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
   display: "swap",
 });
 
-export async function generateMetadata({params: {locale}}: {params: {locale : string}}) {
-  const t = await getTranslations({locale, namespace: 'MetaData'});
- 
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({ locale, namespace: "MetaData" });
+
   return {
-    title: t('title')
+    title: t("title"),
   };
 }
 
@@ -48,7 +52,7 @@ export default async function RootLayout({
     <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
       <body className={bodyClassName}>
         <NextIntlClientProvider messages={messages}>
-            <Navbar />
+          <Navbar />
           <main className="min-h-dvh bg-[linear-gradient(#4B9CD3,#fff)]">
             {children}
           </main>
