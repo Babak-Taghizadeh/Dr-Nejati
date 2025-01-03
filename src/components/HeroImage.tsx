@@ -1,6 +1,6 @@
 "use client"
 
-import avatar from "../../public/2.png";
+import avatar from "../../public/Dr-Nejati.png";
 import Image from "next/image";
 
 
